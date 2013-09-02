@@ -24,6 +24,26 @@ app.get('/user', function (request, response) {
     response.send(html);
 });
 
+app.get("css/screen-c3130a1371.css", function (request, response) {
+    var css = fs.readFileSync("css/screen-c3130a1371.css").toString();
+    response.send(css);
+});
+
+app.get("css/screen-bae4a50ed5.css", function (request, response) {
+    var css = fs.readFileSync("css/screen-bae4a50ed5.css").toString();
+    response.send(css);
+});
+
+app.get("css/screen-5672b7c194.css", function (request, response) {
+    var css = fs.readFileSync("css/screen-5672b7c194.css").toString();
+    response.send(css);
+});
+
+app.get("js/screen-5672b7c194.js", function (request, response) {
+    var s = fs.readFileSync("js/screen-5672b7c194.js").toString();
+    response.send(s);
+});
+
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
