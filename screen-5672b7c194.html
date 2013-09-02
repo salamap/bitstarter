@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>
-      Template &middot; Bootstrap
+      SpeakUp
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -93,7 +93,7 @@
            $("#search").keydown(function (key) {
                if (key.keyCode == 13 && count == 1) {
                    count += 1;
-                   $(".jumbotron").append('<div class = "alert"><h3>Sorry!</h3><p>Help us get on our feet, fund us at....</p></div>');
+                   $(".jumbotron").append('<div class = "alert"><h3>Sorry!</h3><p>Help us get on our feet, fund us at <a href = "/">boomspeak.com</a></p></div>');
                }
            });
            $(document).click(function () {
@@ -113,13 +113,13 @@
             <div class="container">
               <ul class="nav">
                 <li>
-                  <a href="SearchPage">Projects</a>
+                  <a href="/search">Projects</a>
                 </li>
                 <li>
-                  <a href="Trending">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="User">Sign In</a>
+                  <a href="/user">Sign In</a>
                 </li>
               </ul>
             </div>
@@ -142,7 +142,7 @@
       <hr>
       <ul class="breadcrumb">
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
           <span class="divider">/</span>
         </li>
         <li>
@@ -163,14 +163,8 @@
       </div>
     </div>
     <!-- /container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    >
-    </script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"
-    >
-    </script>
-  
-    <script src="js/screen-5672b7c194.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <!--<script src="js/screen-5672b7c194.js"></script>-->
 </body>
-
 </html>
