@@ -14,6 +14,16 @@ app.get('/about', function(request, response) {
   response.send(html);
 });
 
+app.get('/search', function (request, response) {
+    var html = fs.readFileSync("screen-5672b7c194.html").toString();
+    response.send(html);
+});
+
+app.get('/user', function (request, response) {
+    var html = fs.readFileSync("screen-bae4a50ed5.html").toString();
+    response.send(html);
+});
+
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
