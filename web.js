@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/about', function(request, response) {
-  var html = fs.readFileSync(screen-c3130a1371.html).toString();
+  var html = fs.readFileSync("screen-c3130a1371.html").toString();
   response.send(html);
 });
 
